@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Amount of Calories Burnt</h1>
+    <p>{{ prediction }}</p>
+    <a href="{% url 'predict_calories' %}">Predict Again</a>
+</body>
+</html>
